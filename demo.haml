@@ -1,0 +1,70 @@
+!!! 5
+%html
+  %head
+    %link{'rel':'stylesheet','href':'./css/demo.css'}
+    %script{'src':'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'}
+    %script{'src':'./js/jquery.pull-to-refresh.js'}
+    %title Pull-To-Refresh Demo
+
+    %meta{'name':'viewport','content':'width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0'}
+    %meta{'name':'apple-mobile-web-app-capable', 'content':'yes'}
+    %meta{'name':'apple-mobile-web-app-status-bar-style','content':'black'}
+
+  %body
+    #wrapper
+      %ul
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+        %li List item
+    %script
+      $(document).ready(function(){ 
+        $('#wrapper').pull_to_refresh({
+          pull_to_refresh_text = "Pull to Refresh",
+          refreshing_text = "Refreshing...",
+          class = "refreshing",
+          
+        });
+      });
+    </script>
