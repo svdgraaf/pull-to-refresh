@@ -1,6 +1,10 @@
 Pull to refresh 
-======================
+===============
 Easy to use javascript plugin for implementing pull-to-refresh to any page. It works especially well for webapps installed on the homescreen. Or you can use it in your app webviews.
+
+Demo
+====
+Point your i-device to: http://bit.ly/pull-to-refresh
 
 How to use
 ==========
