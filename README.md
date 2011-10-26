@@ -51,3 +51,9 @@ There are several options available, which you can provide during setup:
 Problems?
 =========
 I haven't tested this with other libraries out there (jquery-mobile, iscroll, etc.), so I'm not sure whether this script will interfere with any of those. Then again, they probably provide their own solution :)
+
+Caveats/TODO
+============
+- I'm not sure if this works on any Android devices, I don't have those around, so if anyone can test, that would be sweet :)
+- The element you call will get a position absolute, to support the dragging
+- We need to call e.preventDefault() so this will break the default bouncing of your webview, any tips would be appreciated
