@@ -63,8 +63,8 @@
       $(document).ready(function(){
         $('#wrapper').pull_to_refresh({
           refresh: function(stoploading){
-          },
-          pull_to_refresh_text: 'foobar<br >foobar',
+            stoploading();
+          }
         });
       });
     </script>

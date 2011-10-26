@@ -62,7 +62,7 @@
       $(document).ready(function(){ 
         $('#wrapper').pull_to_refresh({
           refresh: function(stoploading){
-
+            stoploading();
           }
         });
       });

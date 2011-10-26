@@ -2,9 +2,7 @@
   $.fn.pull_to_refresh = function(options) {
 
     var defaults = {
-      refresh: function(){},
-      start: function(){},
-      cancel: function(){},
+      refresh: function(callback){},
       pull_to_refresh_text: 'Pull down to refresh...',
       letgo_text: 'Release to refresh...',
       refreshing_text: 'Refreshing...',
@@ -75,7 +73,7 @@
         content.css('-webkit-transition-duration','.25s');
         content.css('top','0');
         content.addEventListener('transitionEnd', removeTransition);
-        options.cancel();
+       // options.cancel(removeTransition);
       }
 
       track = false;
