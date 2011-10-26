@@ -73,7 +73,6 @@
         content.css('-webkit-transition-duration','.25s');
         content.css('top','0');
         content.addEventListener('transitionEnd', removeTransition);
-       // options.cancel(removeTransition);
       }
 
       track = false;
@@ -81,7 +80,7 @@
 
     // on moving of the touch event, we move the diff down
     // unfortunately, for this to work, we need to prevent the default
-    // behaviour, which means a broken bounce, any tips would be appreciated
+    // behaviour, which means a broken bounce, any tips would be appreciated!
     document.body.addEventListener('touchmove', function(e) {
       e.preventDefault(); // <- bummer!
       var move_to = contentStartY - (startY - e.changedTouches[0].screenY);

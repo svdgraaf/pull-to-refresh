@@ -25,13 +25,21 @@ body {
   background-image: url(../images/arrow.png);
   background-repeat: no-repeat;
   background-size: 23px 53px;
-  background-position: 20px 0; }
+  background-position: 20px 0;
+  text-shadow: 0px 1px white;
+  z-index: 0;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.12) 0px 0px 10px inset; }
+  #pull_to_refresh.visible {
+    background-image: url(../images/arrow_up.png);
+    background-size: 23px 53px;
+    background-position: 20px 0; }
   #pull_to_refresh.refresh {
     background-image: url(../images/spinner.gif);
     background-size: 16px 16px;
     background-position: 20px center; }
 
 ul {
+  z-index: 200;
   margin: 0;
   padding: 0;
   background-color: white; }
