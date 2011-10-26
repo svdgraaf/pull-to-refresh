@@ -6,10 +6,34 @@ body
   color: #404040
   margin: 0
   padding: 0
+  background-color: #e2e7ed
 
+#wrapper
+  width: 100%
+  
+#pull_to_refresh
+  line-height: 60px
+  height: 60px
+  text-align: center
+  background-color: #e2e7ed
+  width: 100%
+  font-weight: bold
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 15px
+  border-bottom: 1px solid #E0E0E0
+  color: #788193
+  background-image: url(../images/arrow.png)
+  background-repeat: no-repeat
+  background-size: 23px 53px
+  background-position: 20px 0
+  
+  &.refresh
+    background-color: red !important
+  
 ul
   margin: 0
   padding: 0
+  background-color: white
   li
     border-bottom: 1px solid #E0E0E0
     font-size: 20px

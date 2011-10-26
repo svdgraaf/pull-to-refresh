@@ -61,10 +61,8 @@
     %script
       $(document).ready(function(){ 
         $('#wrapper').pull_to_refresh({
-          pull_to_refresh_text = "Pull to Refresh",
-          refreshing_text = "Refreshing...",
-          class = "refreshing",
-          
+          refresh: function(stoploading){
+
+          }
         });
       });
-    </script>
