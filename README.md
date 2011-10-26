@@ -33,28 +33,33 @@ There are several options available, which you can provide during setup:
   };
 </pre>
 
-*   refresh
+*   `refresh`
 
     A function, which will be called when the refresh is triggered, it will get a callback method as only option. You can call this function to have the bar removed again.
 
-*   pull_to_refresh_text
+*   `pull_to_refresh_text`
+
     The text that will show up when the bar is being pulled
 
-* letgo_text
+*   `letgo_text`
 
-  The text that will show up when the bar is pulled enough to trigger the refresh callback
-* refreshing_text
+    The text that will show up when the bar is pulled enough to trigger the refresh callback
 
-  Text that will show when the bar is let go, and the refresh callback will be triggered
-* status_indicator_id
+*   `refreshing_text``
+    
+    Text that will show when the bar is let go, and the refresh callback will be triggered
 
-  id of the element to use for the status indicator, you probably won't have to change this
-* refreshClass
+*   `status_indicator_id`
 
-  Class to be used when bar is being refreshed
-* visibleClass
+    id of the element to use for the status indicator, you probably won't have to change this
 
-  Class to be used when the bar was pulled far enough to trigger the refresh callback
+*   `refreshClass`
+
+    Class to be used when bar is being refreshed
+
+*   `visibleClass`
+
+    Class to be used when the bar was pulled far enough to trigger the refresh callback
 
 Problems?
 =========
