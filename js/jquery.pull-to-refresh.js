@@ -7,8 +7,8 @@
       letgo_text: 'Release to refresh...',
       refreshing_text: 'Refreshing...',
       status_indicator_id: 'pull_to_refresh',
-      refreshClass: 'refresh',
-      visibleClass: 'visible',
+      refresh_class: 'refresh',
+      visible_class: 'visible',
     };
     var options = $.extend(defaults, options);
 
@@ -22,8 +22,8 @@
 
     var removeTransition = function() {
       content.css('-webkit-transition-duration',0);
-      status_indicator.removeClass(options.refreshClass);
-      status_indicator.removeClass(options.visibleClass)
+      status_indicator.removeClass(options.refresh_class);
+      status_indicator.removeClass(options.visible_class)
       status_indicator.text(options.pull_to_refresh_text)
     };
 
@@ -62,7 +62,7 @@
         content.css('-webkit-transition-duration','.5s');
         content.css('top',status_indicator.height() + 'px');
         status_indicator.text(options.refreshing_text);
-        status_indicator.addClass(options.refreshClass);
+        status_indicator.addClass(options.refresh_class);
 
         options.refresh(function() { // pass down done callback
           content.addEventListener('transitionEnd', removeTransition);
@@ -91,7 +91,7 @@
       // have we pull the whole indicator down?
       if(move_to > status_indicator.height()) {
         refresh = true;
-        status_indicator.addClass(options.visibleClass)
+        status_indicator.addClass(options.visible_class)
         status_indicator.text(options.letgo_text)
       } else {
         content.css('-webkit-transition','');
