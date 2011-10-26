@@ -33,12 +33,13 @@ There are several options available, which you can provide during setup:
   };
 </pre>
 
-* refresh
+*   refresh
 
-  A function, which will be called when the refresh is triggered, it will get a callback method as only option. You can call this function to have the bar removed again.
-* pull_to_refresh_text
+    A function, which will be called when the refresh is triggered, it will get a callback method as only option. You can call this function to have the bar removed again.
 
-  The text that will show up when the bar is being pulled
+*   pull_to_refresh_text
+    The text that will show up when the bar is being pulled
+
 * letgo_text
 
   The text that will show up when the bar is pulled enough to trigger the refresh callback
