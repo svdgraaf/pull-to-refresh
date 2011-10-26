@@ -79,3 +79,7 @@ Caveats/TODO
 - I'm not sure if this works on any Android devices, I don't have those around, so if anyone can test, that would be sweet :)
 - The element you call will get a position absolute, to support the dragging
 - We need to call e.preventDefault() so this will break the default bouncing of your webview, any tips would be appreciated
+
+Credits
+=======
+Inspired by http://waynepan.com/2010/07/30/javascript-pull-to-refresh/
