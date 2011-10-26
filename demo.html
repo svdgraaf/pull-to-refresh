@@ -3,7 +3,6 @@
   <head>
     <link href='./css/demo.css' rel='stylesheet' />
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
-    <script src='./js/jquery.pull-to-refresh.js'></script>
     <title>Pull-To-Refresh Demo</title>
     <meta content='width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0' name='viewport' />
     <meta content='yes' name='apple-mobile-web-app-capable' />
@@ -12,7 +11,7 @@
   <body>
     <div id='wrapper'>
       <ul>
-        <li>List item</li>
+        <li>This will only work on an i-device</li>
         <li>List item</li>
         <li>List item</li>
         <li>List item</li>
@@ -59,6 +58,7 @@
         <li>List item</li>
       </ul>
     </div>
+    <script src='./js/jquery.pull-to-refresh.js'></script>
     <script>
       $(document).ready(function(){
         $('#wrapper').pull_to_refresh({

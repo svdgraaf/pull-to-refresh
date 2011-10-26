@@ -3,7 +3,6 @@
   %head
     %link{'rel':'stylesheet','href':'./css/demo.css'}
     %script{'src':'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'}
-    %script{'src':'./js/jquery.pull-to-refresh.js'}
     %title Pull-To-Refresh Demo
 
     %meta{'name':'viewport','content':'width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0'}
@@ -13,6 +12,7 @@
   %body
     #wrapper
       %ul
+        %li This will only work on an i-device
         %li List item
         %li List item
         %li List item
@@ -57,7 +57,7 @@
         %li List item
         %li List item
         %li List item
-        %li List item
+    %script{'src':'./js/jquery.pull-to-refresh.js'}
     %script
       $(document).ready(function(){ 
         $('#wrapper').pull_to_refresh({
