@@ -27,7 +27,9 @@ body {
   background-size: 23px 53px;
   background-position: 20px 0; }
   #pull_to_refresh.refresh {
-    background-color: red !important; }
+    background-image: url(../images/spinner.gif);
+    background-size: 16px 16px;
+    background-position: 20px center; }
 
 ul {
   margin: 0;
